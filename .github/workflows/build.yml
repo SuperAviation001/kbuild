@@ -30,7 +30,7 @@ jobs:
     steps:
       - name: clone ksource
         run: |
-          git clone https://github.com/Samsung-Galaxy-A13-A135F-Development/android_kernel_samsung_a13.git -b lineage-22.2 kernel_root
+          git clone https://github.com/Samsung-Galaxy-A13-A135F-Development/android_kernel_samsung_a13.git -b build-ci kernel_root
 
       - name: Prepare dependencies + fetch tags
         run: |
