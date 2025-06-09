@@ -31,7 +31,7 @@ jobs:
       - name: Checkout Kernel Source
         uses: actions/checkout@v4
         with:
-          repository: maazm7d/kernel_samsung_a12
+          repository: Samsung-Galaxy-A13-A135F-Development/android_kernel_samsung_a13
           path: kernel_root
           ref: ${{ github.event.inputs.BRANCH }}
           show-progress: false
