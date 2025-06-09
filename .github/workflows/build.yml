@@ -5,10 +5,11 @@ on:
     inputs:
       BRANCH:
         description: Kernel branch
-        default: 'main'
+        default: 'build-ci'
         required: true
       AK3_NAME:
         description: Enter custom name for AnyKernel3 artifact
+        default: 'SchooshKernel exynos850-a13xx_defconfig'
         required: true
       KERNELSU_NEXT:
         description: Use KernelSU-Next ?
