@@ -72,7 +72,7 @@ jobs:
           export IS_CI=true
           
 
-          export DEFCONFIG="exynos850-a13sxx_defconfig"
+          export DEFCONFIG="exynos850-a13xx_defconfig"
           export DEVICE_ID="A13"
           export KERNEL_SOURCE="https://github.com/Samsung-Galaxy-A13-A135F-Development/android_kernel_samsung_a13"
 
