@@ -96,7 +96,7 @@ jobs:
           # Show final SELinux state
           echo "SELinux is set to: $SELINUX_STATE"
 
-          bash $(pwd)/build_kernel.sh kernel --jobs $(nproc --all) $DEFCONFIG
+          bash $(pwd)/build.sh kernel --jobs $(nproc --all) $DEFCONFIG
 
           
          
