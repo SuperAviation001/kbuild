@@ -70,15 +70,15 @@ jobs:
           export PATH=$(pwd)/toolchains/clang/bin:$PATH
           export CROSS_COMPILE=$(pwd)/toolchains/google/bin/aarch64-linux-android-
           export CLANG_TRIPLE=aarch64-linux-gnu-
-          export KBUILD_BUILD_USER="maaz"
+          export KBUILD_BUILD_USER="schoosh"
           export KBUILD_BUILD_HOST="github"
           export BUILD_START=`date`
           export IS_CI=true
           
 
-          export DEFCONFIG="exynos850-a12snsxx_defconfig"
-          export DEVICE_ID="A12s"
-          export KERNEL_SOURCE="https://github.com/maazm7d/kernel_samsung_a12"
+          export DEFCONFIG="exynos850-a13sxx_defconfig"
+          export DEVICE_ID="A13"
+          export KERNEL_SOURCE="https://github.com/Samsung-Galaxy-A13-A135F-Development/android_kernel_samsung_a13"
 
           if [[ "${{ github.event.inputs.SELINUX_PERMISSIVE }}" == 'true' ]]; then
           echo "Switching SELinux to Permissive mode..."
@@ -204,7 +204,7 @@ jobs:
           name: "${{ steps.tag.outputs.tag_name }}"
           body: ${{ steps.changelog.outputs.changelog }}
           files: kernel_root/anykernel3/AnyKernel3-${{ github.event.inputs.AK3_NAME }}.zip
-          repository: maazm7d/kernel_samsung_a12
+          repository: SuperAviationn001/android_kernel_samsun
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         
