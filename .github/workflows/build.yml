@@ -92,7 +92,7 @@ jobs:
           # Show final SELinux state
           echo "SELinux is set to: $SELINUX_STATE"
 
-          bash $(pwd)/build.sh kernel --jobs $(nproc --all) $DEFCONFIG
+          make $DEFCONFIG --jobs $(nproc --all) -C $(pwd) O=$(pwd)/out LD=ld.lld CC=clang CROSS_COMPILE=$CROSS_COMPILE ARCH=arm64
 
           
          
