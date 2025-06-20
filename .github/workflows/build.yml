@@ -92,8 +92,8 @@ jobs:
           # Show final SELinux state
           echo "SELinux is set to: $SELINUX_STATE"
 
-          make --jobs $(nproc --all) -C $(pwd) O=$(pwd)/out LD=ld.lld CC=clang CROSS_COMPILE=$CROSS_COMPILE ARCH=arm64 $DEFCONFIG
-          make --jobs $(nproc --all) -C $(pwd) O=$(pwd)/out LD=ld.lld CC=clang CROSS_COMPILE=$CROSS_COMPILE ARCH=arm64
+          make --jobs $(nproc --all) -C $(pwd) LD=ld.lld CC=clang CROSS_COMPILE=$CROSS_COMPILE ARCH=arm64 $DEFCONFIG
+          make --jobs $(nproc --all) -C $(pwd) LD=ld.lld CC=clang CROSS_COMPILE=$CROSS_COMPILE ARCH=arm64
           
 
  
